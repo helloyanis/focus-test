@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus test</title>
+</head>
+<body>
+    <script>
+        let focusAmount = 0;
+        document.addEventListener("focus", () => {
+            focusAmount++;
+            document.querySelector("p").textContent = `Focus ${focusAmount} fois`;
+        });
+    </script>
+    <h1>Focus test</h1>
+    <p>Focus 0 fois</p>
+</body>
+</html>
