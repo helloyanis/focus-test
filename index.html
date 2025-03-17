@@ -8,10 +8,10 @@
 <body>
     <script>
         let focusAmount = 0;
-        document.addEventListener("focus", () => {
+        onfocus = (event) => {
             focusAmount++;
             document.querySelector("p").textContent = `Focus ${focusAmount} fois`;
-        });
+        }
     </script>
     <h1>Focus test</h1>
     <p>Focus 0 fois</p>
